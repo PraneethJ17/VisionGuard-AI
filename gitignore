@@ -1,0 +1,45 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Secrets and local settings ----
+.env
+.streamlit/secrets.toml
+
+# ---- Operating system / editor files ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Downloaded model weights (large; they re-download automatically) ----
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.ckpt
+models/
+weights/
+
+# ---- Generated outputs and temporary files ----
+runs/
+outputs/
+output/
+tmp/
+temp/
+*.tmp
+*.log
+
+# ---- Your own test media (can be large or contain people's faces/number plates) ----
+# Remove a line below if you deliberately want to commit a small, safe demo file.
+*.mp4
+*.avi
+*.mov
+*.mkv

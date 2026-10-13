@@ -1,0 +1,33 @@
+# ============================================================================
+# VisionGuard AI - dependencies
+# ============================================================================
+# CORE (required). With only these, the dashboard runs and these features work:
+# image processing, patch-grid view, forward-diffusion noising demo,
+# motion-only video mode, and image-statistics robustness comparison.
+streamlit>=1.40.0,<2.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# ============================================================================
+# OPTIONAL (remove the leading "# " to install with: pip install -r requirements.txt)
+# Each group enables extra modules. Model weights are NOT downloaded at install
+# time or at app start; they download only when you press a Load button.
+#
+# For a smaller CPU-only PyTorch on Windows, install it FIRST with:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# (See README section 11.) A GPU is not required.
+# ============================================================================
+
+# --- YOLO detection, ByteTrack tracking, SAM-style segmentation ---
+# (ultralytics also installs torch and torchvision if they are missing)
+# ultralytics>=8.3.0
+# lapx>=0.5.5
+
+# --- DINOv2 embeddings and CLIP image-text matching ---
+# torch>=2.1.0
+# transformers>=4.40.0
+
+# --- Diffusion inpainting (very large download, see README) ---
+# diffusers>=0.27.0
+# accelerate>=0.26.0
